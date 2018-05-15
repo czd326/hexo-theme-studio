@@ -4,7 +4,7 @@
 
 ## 项目截图
 
-![](./screenshop.png)
+![](./screenshot.png)
 
 ## 使用教程
 
