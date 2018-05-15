@@ -1,0 +1,37 @@
+footer.footer
+  .container
+    .row
+      .col-md-5.col-sm-12.footer-info
+        .logo-wrapper
+          img.logo(src=get_setting('logo'))
+          span.name=get_setting('title')
+          .slogan=get_setting('description')
+          .copyright
+            | Copyright
+            - var year = (new Date).getFullYear()
+            span(style='margin:0 3px') ©
+            =year
+            a(href='/', target='_self')=get_setting('title')
+            | . All Rights Reserved.
+      if theme.family && theme.family.enable == true
+        .col-md-2.footer-links
+          h4=theme.family.title
+          .links
+            each item, index in theme.family.items
+              a.link-item(href=item.url, target='_blank')=item.title
+      if theme.link && theme.link.enable == true
+        .col-md-2.footer-links
+          h4=theme.link.title
+          .links
+            each item, index in theme.link.items
+              a.link-item(href=item.url, target='_blank')=item.title
+      .col-md-3.col-sm-12.footer-qr
+        .row
+          if theme.qrcode && theme.qrcode.qqgroup
+            .col-md-6.col-xs-6.qr-item
+              img(src=theme.qrcode.qqgroup.img)
+              p=theme.qrcode.qqgroup.title
+          if theme.qrcode && theme.qrcode.wechatmp
+            .col-md-6.col-xs-6.qr-item
+              img(src=theme.qrcode.wechatmp.img)
+              p=theme.qrcode.wechatmp.title

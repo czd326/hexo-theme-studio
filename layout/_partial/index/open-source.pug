@@ -1,0 +1,22 @@
+if theme.open_source && theme.open_source.enable == true          
+  section.i-wrap.i-project
+    .container
+      h2.i-main-title
+        span.text
+          span=theme.open_source.alias
+          span='/ '+theme.open_source.title
+        span.sub-title=theme.open_source.subtitle
+    .container
+      .row
+        each item, index in theme.open_source.items
+          .col-md-3.col-sm-6.col-xs-12
+            a(href=item.url, target='_blank')
+              article(class='i-art-wrap', class='art'+(index+1))
+                .i-ad-img
+                  img(src=item.img)
+                h3=item.name
+                p=item.intro
+                i.light
+    if theme.open_source && theme.open_source.has_more == true
+      .i-more
+        a.btn.btn-default.btn-lg(href=theme.open_source.more_url, target='_blank')=theme.open_source.more_text

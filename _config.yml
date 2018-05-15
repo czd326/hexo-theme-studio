@@ -1,0 +1,190 @@
+# html lang
+language: en
+
+# main menu navigation
+menu:
+  首页: /
+  博客: /archives
+  关于: /about
+
+# Miscelaneous
+favicon: http://p7vlrarrm.bkt.clouddn.com/logo1.png
+logo: http://p7vlrarrm.bkt.clouddn.com/logo1.png
+
+# stylesheets loaded in the <head>
+stylesheets:
+- https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css
+- http://cdn.alloyteam.com/assets/libs/bootstrapcss-098402.css
+- /css/studio.css
+
+# scripts loaded in the end of the body
+scripts:
+- /js/studio.js
+
+default_post_cover: http://p7vlrarrm.bkt.clouddn.com/banner1.jpg
+default_author_name: 艾豆工作室
+default_author_link: http://idoustudio.com
+
+# 幻灯片
+slider:
+  enable: true
+  items:
+    -
+     title: 艾豆工作室
+     subtitle: 专注互联网技术开发与服务
+     img: http://p7vlrarrm.bkt.clouddn.com/banner1.jpg
+
+# 开源项目展示
+open_source:
+  enable: true
+  alias: OpenSource
+  title: 开源项目
+  subtitle: 让世界看到你的创造力
+  has_more: true
+  more_text: 更多开源 > 
+  more_url: https://github.com/mikemintang
+  items:
+    -
+      name: douchat
+      intro: 简洁高效的微信开发框架
+      img: http://p7vlrarrm.bkt.clouddn.com/douchat-logo.png
+      url: https://github.com/mikemintang/douchat.git
+    -
+      name: gonews
+      intro: golang每日新闻检索平台
+      img: http://p7vlrarrm.bkt.clouddn.com/gonews1.png
+      url: https://github.com/mikemintang/gonews.git
+    -
+      name: sql2struct
+      intro: 生成go结构体的chrome插件
+      img: http://p7vlrarrm.bkt.clouddn.com/golang.png
+      url: https://github.com/mikemintang/sql2struct.git
+    - 
+      name: go-curl
+      intro: 用go实现的curl请求库
+      img: http://p7vlrarrm.bkt.clouddn.com/go-curl1.png
+      url: https://github.com/mikemintang/go-curl.git
+
+# 作品展示
+product:  
+  enable: true
+  alias: Product
+  title: 作品展示
+  subtitle: 用作品证明我们的实力
+  has_more: false
+  more_text: 更多作品 >
+  more_url: 
+  items: 
+    -
+      name: 豆信开源框架
+      intro: 简洁高效的微信开发框架
+      img: http://p7vlrarrm.bkt.clouddn.com/douchatweb.png
+      url: http://douchat.net 
+    -
+      name: golang每日新闻
+      intro: 了解go的最新资讯
+      img: http://p7vlrarrm.bkt.clouddn.com/gonewsweb.png
+      url: http://gonews.cc 
+    - 
+      name: 任想程序
+      intro: 小程序一键托管平台
+      img: http://p7vlrarrm.bkt.clouddn.com/douchatadmin1.png
+      url: http://thinkanything.cn
+    - 
+      name: 微擎插件
+      intro: 基于微擎开发的插件
+      img: http://p7vlrarrm.bkt.clouddn.com/we7home.png
+      url: http://s.we7.cc/index.php?c=home&a=author&do=index&uid=95501
+
+# 博客概览
+blog:
+  enable: false
+
+# 团队成员
+team:
+  enable: true
+  alias: Team 
+  title: 团队成员
+  subtitle: 靠谱的人做靠谱的事
+  more_text: 
+  more_url: 
+  items: 
+    -
+      name: 艾逗笔
+      intro: 全栈工程师，工作室负责人
+      img: http://p7vlrarrm.bkt.clouddn.com/idoubi.png
+      url: http://idoubi.cc 
+    - 
+      name: 阿东
+      intro: 大数据工程师，熟悉java、python
+      img: http://p7vlrarrm.bkt.clouddn.com/ad9.png
+      url: https://github.com/xuexingdong
+    -
+      name: 豪哥
+      intro: 微信开发达人
+      img: http://p7vlrarrm.bkt.clouddn.com/team-zh.png
+      url: 
+    -
+      name: 丢哥
+      intro: 阿里巴巴Java工程师
+      img: http://p7vlrarrm.bkt.clouddn.com/team-dg.jpg
+      url: https://github.com/diubrother
+    -
+      name: 阿超
+      intro: 百度C++工程师
+      img: http://p7vlrarrm.bkt.clouddn.com/team-ac-1.jpg
+      url:  
+    -
+      name: 光耀
+      intro: 携程前端工程师
+      img: http://p7vlrarrm.bkt.clouddn.com/team-gy.png
+      url: http://ygy.online/
+    -
+      name: 周老师
+      intro: 前端工程师，曾任职百度
+      img: http://p7vlrarrm.bkt.clouddn.com/team-zls.png
+      url:
+    -
+      name: TC
+      intro: 设计师，清华大学硕士在读
+      img: http://p7vlrarrm.bkt.clouddn.com/team-tc.png
+      url: 
+    -
+      name: 任文若
+      intro: 互联网运营
+      img: http://p7vlrarrm.bkt.clouddn.com/team-rwr.png
+      url: 
+    
+
+# 展示二维码
+qrcode:
+  wechatmp:
+    img: http://p7vlrarrm.bkt.clouddn.com/idoustudio.jpeg
+    title: 关注公众号 
+
+# 大家庭
+family:
+  enable: true
+  title: 周边产品
+  items:
+    - 
+      title: 豆信官网
+      url: http://douchat.net 
+    - 
+      title: 艾豆工作室淘宝店
+      url: https://shop125089692.taobao.com/
+
+# 友情链接
+link:
+  enable: true
+  title: 友情链接
+  items:
+    -
+      title: 艾逗笔个人博客
+      url: http://idoubi.cc 
+    -
+      title: 尹光耀个人博客
+      url: http://ygy.online
+    -
+      title: 酷猴乐园
+      url: http://kuhou.net

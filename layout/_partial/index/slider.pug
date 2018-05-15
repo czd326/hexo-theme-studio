@@ -1,0 +1,12 @@
+if theme.slider && theme.slider.enable == true
+  #indexCarousel.carousel.slide.show(data-ride='carousel', data-interval='5000')
+    ol.carousel-indicators
+      each item, index in theme.slider.items
+        li(data-target='#indexCarousel', data-slide-to=index)
+    .carousel-inner
+      each item, index in theme.slider.items
+        div(class='item', class='item'+index, class=(index == 0 ? 'active' : ''), style='background-image: url('+item.img+')')
+          a(href=item.url, target='_blank')
+            .item-info
+              p.title-name=item.title
+              p.title-desc=item.subtitle

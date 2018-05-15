@@ -1,0 +1,48 @@
+.browserupgrade {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f19a2a;
+    text-align: center;
+    z-index: 9999;
+    color: #fff
+}
+
+.browserupgrade .tip {
+    width: 900px;
+    margin: 160px auto 40px;
+    font-size: 24px
+}
+
+.browserupgrade .tip-author {
+    width: 900px;
+    margin: 0 auto 70px;
+    text-align: right;
+    font-style: italic;
+    font-size: 24px
+}
+
+.browserupgrade a {
+    display: block;
+    width: 200px;
+    border: 3px solid #fff;
+    padding: 15px 10px;
+    font-size: 25px;
+    color: #fff
+}
+
+body {
+    font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+    color: #494d55;
+    font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 0
+}
+
+a {
+    text-decoration: none
+}

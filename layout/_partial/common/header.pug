@@ -1,0 +1,20 @@
+header#header.header
+  .container
+    h1.logo
+      a.scrollto(href='/')
+        span.logo-icon-wrapper
+          img.logo-icon(src=get_setting('logo'), alt='icon')
+        span.text
+          span.highlight=config.title
+    nav.main-nav.navbar-right(role='navigation')
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-collapse')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+      #navbar-collapse.navbar-collapse.collapse
+        ul.nav.navbar-nav
+          each url, label in theme.menu
+            li(class='nav-item', class=is_current(url) ? 'active' : '')
+              a.scrollto(target='_self', href=url_for(url))=label

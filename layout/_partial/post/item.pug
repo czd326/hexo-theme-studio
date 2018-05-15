@@ -1,0 +1,43 @@
+mixin post-item(post)
+  - 
+    var postCover = post.cover || get_setting('default_cover')
+    var postDateMonth = date(post.date || post.update, 'MMM')
+    if (get_setting('language') == 'zh-CN') {
+      postDateMonth = date(post.date || post.update, 'MMMM')
+    }
+    var postAuthorName = get_setting('default_author_name')
+    var postAuthorLink = get_setting('default_author_link')
+    if (post.author) {
+      if (post.author.name) {
+        postAuthorName = post.author.name
+      }
+      if (post.author.link) {
+        postAuthorLink = post.author.link
+      }
+    }
+  article.page__mini-article(itemscope='', itemtype='http://schema.org/Article')
+    if postCover
+      .mini-article__cover
+        img(itemprop="image" src=postCover alt=post.title)
+        div(itemprop="datePublished" class="mini-article__date")
+          span.date__day=date(post.date || post.update, 'D')
+          span.date__month=postDateMonth
+        a(itemprop="url" class="iconfont icon-enter" href=url_for(post.path))
+    .mini-article__info
+      h3.mini-article__title(itemprop='name')
+        a(itemprop='url', href=url_for(post.path), title=post.title)=post.title
+      p.min-article__desc(itemprop='articleSection')!=post.excerpt
+      p.mini-article__author
+        span.date
+          | 发布于 
+          =date(post.date)
+        | by 
+        span(itemprop='author', itemscope='', itemtype='http://schema.org/Person')
+          a(itemprop='url', href=postAuthorLink, target='_blank')
+            span(itemprop='name')=titlecase(postAuthorName)
+      .min-article__tags
+        i.fa.fa-tag
+        ul.tags__list.clearfix
+          each tag in post.tags.data
+            li.tags__item
+              a(href=url_for(tag.path))=tag.name

@@ -1,0 +1,18 @@
+doctype html
+html(lang=config.language)
+  head
+    include ./common/head.pug
+    include ./common/style.pug
+  body
+    //if lt IE 9
+      .browserupgrade
+        .tip "Duang"，你被鄙视了，还在用这么Low的浏览器，快去升级吧！
+        .tip-author  -by AlloyTeam 
+        a(href=' http://browsehappy.osfipin.com/ ') 点我去升级
+      style.
+        .main{display:none}
+    .main
+      include ./common/header.pug
+      block content
+      include ./common/footer.pug
+      include ./common/script.pug

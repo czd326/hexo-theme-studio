@@ -1,0 +1,21 @@
+if theme.product && theme.product.enable == true
+  section.i-wrap.i-subject
+    .container
+      h2.i-main-title
+        span.text
+          span=theme.product.alias
+          span='/ '+theme.product.title
+        span.sub-title=theme.product.subtitle
+    .container
+      .row
+        each item, index in theme.product.items
+          .col-md-3.col-sm-6.col-xs-12
+            a(href=item.url, target='_blank', title=item.title)
+              .i-subject-wrap
+                .i-subject-head
+                  img(src=item.img)
+                p.i-desc=item.name
+                p.i-desc=item.intro
+      if theme.product && theme.product.has_more == true
+        .i-more
+          a.btn.btn-default.btn-lg(href=theme.product.more_url, target='_blank')=theme.product.more_text

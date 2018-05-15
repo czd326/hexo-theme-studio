@@ -1,0 +1,26 @@
+if theme.team && theme.team.enable
+  section.i-wrap.i-starrank
+    .container
+      h2.i-main-title
+        span.text
+          span=theme.team.alias
+          span='/ '+theme.team.title
+        span.sub-title=theme.team.subtitle
+    .container
+      .row
+        each item, index in theme.team.items
+          .col-md-4.col-xs-12
+            - var url = item.url || 'javascript:;'
+            a(class='i-star-a', href=url, target='_blank')
+              .i-star-wrap
+                .i-head
+                  .i-img-wrap
+                    img(src=item.img)
+                  h3=item.name
+                .desc=item.intro
+    if theme.team && theme.team.more_text
+      .i-more
+        a.btn.btn-default.btn-lg(target='_blank', href=theme.team.more_url)=theme.team.more_text
+
+
+

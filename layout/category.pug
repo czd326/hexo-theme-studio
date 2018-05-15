@@ -1,0 +1,15 @@
+extends _partial/layout.pug
+
+block content
+  main.page__container.page__main
+    include _partial/sidebar/main.pug
+    .page__content
+      nav.mb-main__nav
+        a.nav__item.nav__item--selected(href='javascript:void(0)', alt=page.category)=page.category
+      include _partial/post/list.pug
+      !=s_paginator(3)
+
+
+
+
+

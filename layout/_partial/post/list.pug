@@ -1,0 +1,11 @@
+.page__posts.clearfix
+  if is_archive()
+    each post in blog_archive_post(page)
+      .page__post
+        include ./item.pug
+        +post-item(post)
+  else
+    each post in page.posts.data
+      .page__post
+        include ./item.pug
+        +post-item(post)

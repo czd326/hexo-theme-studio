@@ -1,0 +1,115 @@
+.footer {
+    padding: 30px 0;
+    background: #26282c;
+    color: hsla(0, 0%, 100%, .7)
+}
+
+.footer a {
+    color: hsla(0, 0%, 100%, .4)
+}
+
+.footer .footer-links {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.footer .footer-links h4 {
+    font-size: 14px
+}
+
+.footer .footer-qr {
+    margin-top: 20px;
+    font-size: 12px
+}
+
+.footer .logo-wrapper {
+    padding-left: 0;
+    padding-right: 10px;
+    margin-top: 10px
+}
+
+.footer .logo {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    position: relative;
+    top: -10px
+}
+
+.footer .name {
+    font-size: 30px;
+    font-family: Segoe UI Light
+}
+
+.footer .slogan {
+    font-size: 16px;
+    margin-top: 5px;
+    color: hsla(0, 0%, 100%, .4)
+}
+
+.footer .copyright {
+    text-align: left;
+    margin-top: 30px;
+    color: hsla(0, 0%, 100%, .4)
+}
+
+.footer .links {
+    text-align: left
+}
+
+.footer .links .link-title {
+    display: inline-block;
+    font-size: 14px
+}
+
+.footer .links .link-item {
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+}
+
+.footer .links .link-item:hover {
+    color: #f2b535
+}
+
+.footer .qr-item {
+    margin-top: 5px;
+    text-align: center;
+    padding: 0 2px
+}
+
+.footer .qr-item img {
+    width: 120px;
+    height: 120px
+}
+
+.footer .qr-item img:hover {
+    position: relative;
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    z-index: 99
+}
+
+.footer .qr-item p {
+    margin-top: 10px;
+    color: gray
+}
+
+@media (max-width:992px) {
+    .footer-info {
+        text-align: center
+    }
+    .footer-info .logo-wrapper {
+        margin-top: 0
+    }
+    .footer-info .copyright {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 20px
+    }
+    .footer-links {
+        display: none
+    }
+}

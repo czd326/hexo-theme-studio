@@ -1,0 +1,62 @@
+article.page__post
+  -
+    var cover = page.cover || ''
+    var authorName = get_setting('default_author_name')
+    var authorLink = get_setting('default_author_link')
+    if (page.author) {
+      if (page.author.name) {
+        authorName = page.author.name
+      }
+      if (page.author.link) {
+        authorLink = page.author.link
+      }
+    }
+  if cover
+    .post__cover
+      img(src=cover)
+  header.post__info
+    h1.post__title=page.title
+    if is_post()
+      .post__mark
+        .mark__block
+          i.fa.fa-user
+          ul.mark__list.clearfix
+            li.mark__item
+              a(href=authorLink, target='_blank')=authorName
+        .mark__block
+          i.fa.fa-calendar-check-o
+          ul.mark__list.clearfix
+            li.mark__item
+              span=date(page.date)
+        .mark__block
+          i.fa.fa-tag
+          ul.mark__list.clearfix
+            each tag in page.tags.data
+              li.mark__item
+                a(href=url_for(tag.path))=tag.name
+        .mark__block
+          i.fa.fa-eye
+          ul.mark__list.clearfix
+            li#busuanzi_container_page_pv.mark__item(style='display: inline;')
+              span#busuanzi_value_page_pv=Math.ceil(Math.random()*10000)
+              | 次
+  .post__content
+    !=page.content
+    if is_post()
+      .post-announce
+        | 感谢您的阅读，本文由 
+        a(href=url_for('/'))=get_setting('title')
+        |  版权所有。如若转载，请注明出处：
+        =get_setting('title')
+        |（
+        a(href=url_for('/'))=get_setting('default_author_link')
+        | ）
+      .post__prevs
+        .post__prev
+          if page.next
+            a(href=url_for(page.next.path), title=page.next.title)
+              i.iconfont.icon-prev=page.next.title
+        .post__prev.post__prev--right
+          if page.prev
+            a(href=url_for(page.prev.path), title=page.prev.title)=page.prev.title
+              i.iconfont.icon-next

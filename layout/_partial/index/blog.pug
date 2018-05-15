@@ -1,0 +1,71 @@
+section.i-wrap.i-blog
+  .container
+    h2.i-main-title
+      span.text
+        span Blog
+        span /
+        | 博客
+      span.sub-title 最新技术发展,业界前沿博客
+  .container
+    .row
+      .col-md-6
+        .i-panel.clear
+          h2.i-p-title
+            | 最新博客 
+            a(href='http://www.alloyteam.com/page/0', target='_blank')
+              i.i-icon-more
+          ul#post_container.i-text-news
+            each post in page.posts.sort('date', -1).limit(5).toArray()
+              li
+                a(target='_self', href=config.root + post.path)
+                  h4=post.title
+                  span.i-author=date(post.date, date_format)
+      .col-md-6
+        .i-panel.clear
+          h2.i-p-title
+            | 博客分类 
+            a(href='http://www.alloyteam.com/page/0', target='_blank')
+              i.i-icon-more
+          div
+            .blog-category.col-sm-6.col-xs-12
+              a(href='http://www.alloyteam.com/webdevelop/javascript/', target='_blank')
+                .category-icon.color1
+                  img(src='http://cdn.alloyteam.com/assets/img/icon_js-1aeaf5.png')
+                .category-name
+                  h2 Javascript
+                  .desc 没看过这些，怎么敢说懂js
+            .blog-category.col-sm-6.col-xs-12
+              a(href='http://www.alloyteam.com/webdevelop/css3/')
+                .category-icon.color2
+                  img(src='http://cdn.alloyteam.com/assets/img/icon_css-e7ce8b.png')
+                .category-name
+                  h2 CSS
+                  .desc 神奇的CSS在哪里？
+            .blog-category.col-sm-6.col-xs-12
+              a(href='http://www.alloyteam.com/webdevelop/node/', target='_blank')
+                .category-icon.color3
+                  img(src='http://cdn.alloyteam.com/assets/img/icon_nodejs-7a9d35.png')
+                .category-name
+                  h2 Node.js
+                  .desc 亿万级数据服务的秘密
+            .blog-category.col-sm-6.col-xs-12
+              a(href='http://www.alloyteam.com/mobiledevelop/mobileweb/', target='_blank')
+                .category-icon.color4
+                  img(src='http://cdn.alloyteam.com/assets/img/icon_mobile-e8dfa6.png')
+                .category-name
+                  h2 移动Web开发
+                  .desc PC转向移动，这是个问题
+            .blog-category.col-sm-6.col-xs-12
+              a(href='http://www.alloyteam.com/webdevelop/ued/', target='_blank')
+                .category-icon.color5
+                  img(src='http://cdn.alloyteam.com/assets/img/icon_users-2af091.png')
+                .category-name
+                  h2 用户体验设计
+                  .desc 震惊！原来应用还可以这样设计
+            .blog-category.col-sm-6.col-xs-12
+              a(href='http://www.alloyteam.com/webdevelop/web-%e5%89%8d%e7%ab%af%e4%bc%98%e5%8c%96/', target='_blank')
+                .category-icon.color6
+                  img(src='http://cdn.alloyteam.com/assets/img/icon_performance-7ea77d.png')
+                .category-name
+                  h2 Web性能优化
+                  .desc 丝般柔顺体验背后的真相

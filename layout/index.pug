@@ -1,0 +1,14 @@
+extends _partial/layout.pug
+
+//- block content
+  include includes/recent-posts.pug
+  div!= paginator()
+block content
+  style.
+    header#header {
+      background: transparent;
+    }
+  include _partial/index/slider.pug
+  include _partial/index/open-source.pug
+  include _partial/index/product.pug
+  include _partial/index/team.pug

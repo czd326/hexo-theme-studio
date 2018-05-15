@@ -1,0 +1,175 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+    height: 60px;
+    padding: 10px 0;
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out
+}
+
+.header.header-scrolled {
+    padding: 0;
+    background: #fff;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .5)
+}
+
+.header.header-scrolled a {
+    color: #494d55
+}
+
+.header.header-scrolled .logo {
+    color: #f2b535;
+    padding-top: 12px
+}
+
+.header.header-scrolled .main-nav .nav .nav-item a {
+    color: #494d55
+}
+
+.header.header-scrolled .main-nav .nav .nav-item a:hover {
+    color: #f2b535;
+    background: rgba(0, 0, 0, .1)
+}
+
+.header.header-scrolled .main-nav .nav .nav-item.active a {
+    color: #f2b535;
+    border-bottom: 4px solid #f2b535
+}
+
+.header.header-scrolled .icon-bar {
+    background-color: #000!important
+}
+
+.header a {
+    color: hsla(0, 0%, 100%, .65);
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none
+}
+
+.header a:hover {
+    text-decoration: none
+}
+
+.header .logo {
+    margin: 0;
+    display: inline-block;
+    float: left;
+    font-size: 18px;
+    padding-top: 15px;
+    font-family: Segoe UI Light
+}
+
+.header .logo .logo-icon-wrapper {
+    margin-right: 3px;
+    position: relative;
+    display: inline-block;
+    top: -3px
+}
+
+.header .logo .logo-icon {
+    width: 30px;
+    height: 30px
+}
+
+.header .logo .highlight {
+    font-weight: 400
+}
+
+.main-nav {
+    margin-top: 6px
+}
+
+.main-nav .navbar-toggle {
+    margin-right: 0;
+    margin-top: 0;
+    background: none;
+    position: absolute;
+    right: 10px;
+    top: 10px
+}
+
+.main-nav .navbar-toggle:focus {
+    outline: none
+}
+
+.main-nav .navbar-toggle .icon-bar {
+    background-color: #fff;
+    height: 3px
+}
+
+.main-nav .navbar-toggle:hover .icon-bar {
+    background-color: #fff
+}
+
+.main-nav .nav .nav-item {
+    font-weight: 400;
+    font-size: 16px;
+    margin-right: 20px
+}
+
+.main-nav .nav .nav-item.active a {
+    background: none;
+    color: #f2b535
+}
+
+.main-nav .nav .nav-item a {
+    color: hsla(0, 0%, 100%, .65);
+    font-weight: 400
+}
+
+.main-nav .nav .nav-item a:hover {
+    color: #f2b535;
+    background: none
+}
+
+.main-nav .nav .nav-item a:active,
+.main-nav .nav .nav-item a:focus {
+    outline: none;
+    background: none
+}
+
+.main-nav .nav .nav-item:last-child {
+    margin-right: 0
+}
+
+.main-nav .nav.active {
+    position: relative
+}
+
+.nav>li>a {
+    padding-left: 5px;
+    padding-right: 5px
+}
+
+@media (max-width:992px) {
+    .navbar-collapse {
+        border-top: none;
+        box-shadow: none;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        position: absolute;
+        background: #26282c;
+        z-index: 40
+    }
+    .header .main-nav .navbar-collapse .nav-item.active a {
+        color: #f2b535
+    }
+    .header.header-scrolled .main-nav .navbar-collapse .nav-item.active a {
+        border: none;
+        color: #f2b535
+    }
+    .main-nav .navbar-collapse .nav-item {
+        margin-right: 0
+    }
+    .main-nav .navbar-collapse .nav-item a {
+        text-align: center
+    }
+}
