@@ -118,43 +118,7 @@ team:
       name: 阿东
       intro: 大数据工程师，熟悉java、python
       img: http://p7vlrarrm.bkt.clouddn.com/ad9.png
-      url: https://github.com/xuexingdong
-    -
-      name: 豪哥
-      intro: 微信开发达人
-      img: http://p7vlrarrm.bkt.clouddn.com/team-zh.png
-      url: 
-    -
-      name: 丢哥
-      intro: 阿里巴巴Java工程师
-      img: http://p7vlrarrm.bkt.clouddn.com/team-dg.jpg
-      url: https://github.com/diubrother
-    -
-      name: 阿超
-      intro: 百度C++工程师
-      img: http://p7vlrarrm.bkt.clouddn.com/team-ac-1.jpg
-      url:  
-    -
-      name: 光耀
-      intro: 携程前端工程师
-      img: http://p7vlrarrm.bkt.clouddn.com/team-gy.png
-      url: http://ygy.online/
-    -
-      name: 周老师
-      intro: 前端工程师，曾任职百度
-      img: http://p7vlrarrm.bkt.clouddn.com/team-zls.png
-      url:
-    -
-      name: TC
-      intro: 设计师，清华大学硕士在读
-      img: http://p7vlrarrm.bkt.clouddn.com/team-tc.png
-      url: 
-    -
-      name: 任文若
-      intro: 互联网运营
-      img: http://p7vlrarrm.bkt.clouddn.com/team-rwr.png
-      url: 
-    
+      url: https://github.com/xuexingdong 
 
 # 展示二维码
 qrcode:
@@ -183,8 +147,8 @@ link:
       title: 艾逗笔个人博客
       url: http://idoubi.cc 
     -
-      title: 尹光耀个人博客
-      url: http://ygy.online
+      title: 艾豆工作室
+      url: http://idoustudio.com
     -
-      title: 酷猴乐园
-      url: http://kuhou.net
+      title: Github
+      url: http://github.com/mikemintang
